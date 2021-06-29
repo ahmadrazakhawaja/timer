@@ -1,0 +1,17 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+    <script src="../stylesheets/script.js"></script>
+{% endblock %}
+
+{% block body %}
+
+    <div id="clock" >
+
+        <p class="date">{{ date }}</p>
+        <p id="time"></p>
+        <button type="button" class="btn btn-outline-light start">Set Start Time</button>
+        <button type="button" class="btn btn-outline-light launch">Set Launch Time</button>
+    </div>
+
+{% endblock %}

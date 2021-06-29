@@ -1,0 +1,31 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+    <script src="../stylesheets/script2.js"></script>
+{% endblock %}
+
+{% block body %}
+
+    <div id="clock">
+        <div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-lg-6 text-center">
+            <p class="stime">Start Time: {{ start_time }}</p>
+        </div>
+        <div class="col-lg-6 text-center">
+             <p id="time"></p>
+            
+        </div>
+    </div>
+    <div class="row">
+         <div class="col-lg-6 text-center">
+            <p class="ltime">Launch Time: {{ launch_time }}</p>
+        </div>
+         <div class="col-lg-6 text-center">
+            <p class="date">{{date}}</p>
+        </div>
+    </div>
+    
+    </div>
+
+{% endblock %}
